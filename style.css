@@ -1203,7 +1203,7 @@ body{
     }
 
     .footerSection li a{
-        color: #f9f9f9;
+        color: inherit;
         text-decoration: none;
     }
 
