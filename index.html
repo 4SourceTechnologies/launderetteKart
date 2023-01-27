@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +21,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" class="stylesheet">
-    
-    <title>Launderette Kart</title>
 
+    <!-- Data AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -62,22 +63,22 @@
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ol class="topMenu navbar-nav ms-auto">
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                                                    <a href="#" class="nav-link active" aria-current="page">Home</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="about.html" class="nav-link">About Us</a>
+                                                    <a href="#" class="nav-link">About Us</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="#process" class="nav-link">Process</a>
+                                                    <a href="#" class="nav-link">Process</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="services.html" class="nav-link">Services</a>
+                                                    <a href="#" class="nav-link">Services</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="#pricing" class="nav-link">Pricing</a>
+                                                    <a href="#" class="nav-link">Pricing</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="contact.html" class="nav-link">Contact</a>
+                                                    <a href="#" class="nav-link">Contact</a>
                                                 </li>
                                             </ol>
                                         </div>
@@ -90,21 +91,41 @@
 
                 <div class="heroLeft">
                     <div>
-                        <h2>We are the <span>best laundary</span> Service in Town</h2>
+                        <h2>We are the <span data-aos="fade-up" data-aos-delay="600">best laundary</span> Service in Town</h2>
                         <p>Lorem Ipsum is simply dummy text of the
                             printing and typesetting industry.</p>
                         <button class="btn1">Learn More</button>
                     </div>
 
-                    <div class="BannerImg">
-                      <div class="bannerImgWrapper">
-                        <img src="images/bannerPlaceHolderImg.png" alt="">
-                      </div>
-                        
-                        <div class="playBtn">
-                            <img src="images/playButton.png" alt="">
+                    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" data-bs-interval="1000">
+                            <div class="carousel-item active">
+                                <div class="BannerImg">
+                                    <div class="bannerImgWrapper">
+                                        <img src="images/bannerPlaceHolderImg.png" alt="">
+                                    </div>
+                                
+                                    <div class="playBtn">
+                                        <img src="images/playButton.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="BannerImg">
+                                    <div class="bannerImgWrapper">
+                                        <img src="images/bannerPlaceHolderImg.png" alt="">
+                                    </div>
+                                
+                                    <div class="playBtn">
+                                        <img src="images/playButton.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                
+               
                 </div>
 
 
@@ -144,7 +165,7 @@
             </div>
         </div>
 
-        <div class="processSection" id="process">
+        <div class="processSection">
             <h1>PROCESS</h1>
             <div class="processContainer container-fluid">
                 <div class="processList row">
@@ -434,7 +455,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="pricingCard card">
-                        <img src="images/pricing3img.png" alt="" class="card-img-top premiumImg">
+                        <img src="images/pricing3Img.png" alt="" class="card-img-top premiumImg">
                         <h4 class="card-title">Premium Package</h4>
                         <h5 class="card-subtitle">70 clothes per month</h5>
                         <div class="horizontalRedline"></div>
@@ -556,7 +577,7 @@
         <div class="footerSection">
             <div class="footerColWrapper">
                 <div class="footerIntro">
-                    <img src="images/logo.png" alt="" class="footerLogo">
+                    <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="images/logo.png" alt="" class="footerLogo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, inventore qui libero enim minima assumenda.</p>
                 </div>
                 <div class="quickLinks">
@@ -602,17 +623,15 @@
         </div> 
     </div>
 
-
-
-
-
-
-
-
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
