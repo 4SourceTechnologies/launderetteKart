@@ -1803,3 +1803,132 @@ body{
         }
     }
 /* About Page ends */
+
+/* Process Page */
+    .processMain{
+        padding: 2rem 1rem;
+    }
+
+    .processMain .topText{
+        text-align: center;
+    }
+
+    .topText h1{
+        color: #aa2d2f; 
+    }
+
+    .topText h4{
+        margin: 1rem 0;
+        font-size: 1.75rem;
+        position: relative;
+    }
+
+    .topText h4::before{
+        content: "";
+        position: absolute;
+        width: 7%;
+        left: 25%;
+        height: 3px;
+        top: 2.5rem;
+        background: #f8c205;
+        transform: translate(50%, -50%);
+    }
+
+    .topText p{
+        width: 50%;
+        margin: auto;
+    }
+
+    .cardSection .card:hover #icon{
+        fill: #f9f9f9;
+    }
+
+    .processBottom{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        width: 80%;
+        margin: auto;
+    }
+
+    .processBottomLeft{
+        margin-left: auto;
+        border-right: 1px solid black;
+    }
+
+    .processBottomLeft embed{
+        float: left;
+        padding-right: 0.75rem;
+    }
+
+    .processBottomLeft h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        padding-left: 
+    }
+
+    .processBottomRight{
+        padding-left: 2rem;
+    }
+
+    .processBottomRight h4{
+        position: relative;
+        font-size: 1.65rem;
+    }
+
+    .processBottomRight h4:before{
+        content: "";
+        position: absolute;
+        width: 10%;
+        left: -5%;
+        height: 3px;
+        top: 2.5rem;
+        background: #f8c205;
+        transform: translate(50%, -50%);
+    }
+
+    .processBottomRight h6{
+        margin-block: 2rem 0.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.1rem;
+        letter-spacing: 0.75px;
+    }
+
+    /* Responsiveness */
+    @media only screen and (max-width: 767px){
+        .processMain .topText{
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        .topText p{
+            width: 100%;
+        }
+
+        .topText h4{
+            line-height: 1.3;
+        }
+
+        .topText h4::before{
+            top: 2.35rem;
+            left: -7%;
+            width: 20%;
+        }
+
+        .processMain .processSection{
+            padding: 2rem 1rem;
+        }
+
+        .processBottom{
+            grid-template-columns: 1fr;
+        }
+
+        .processBottomLeft{
+            border: none;
+        }
+
+        .processBottomRight{
+            padding: 1.75rem 0;
+        }
+    }
+/* Process Page Ends */
