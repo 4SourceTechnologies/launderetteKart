@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="blogBody">
+    <div class="container-fluid gx-0 mainContainer">
+        <div class="row dNav">
+            <!-- Navbar -->
+            <div class="container-fluid headerTopWrappper">
+                <div class="headerTop">
+                    <div class="headerTop_left">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="topHeader_leftText">
+                                    <p>
+                                        <a href="mailto:theinsignia@gmail.com">theinsignia@gmail.com</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="topHeader_leftText">
+                                    <p><a href="tel:8981921713">8981921713</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="headerTop_right">
+                        <div class="socialIcons">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></li></a>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></li></a>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></li></a>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav id="navTwo" class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="images/logoFinal.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="Interior2toggler navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="workflow.html">WORK FLOW</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="testimonials.html">TESTIMONIALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactUs.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="strickyHeader">
+                    <nav id="navTwo" class="navbar navbar-expand-lg navbar-light bg-transparent" data-aos="fade-down"
+                        data-aos-duration="1000" data-aos-anchor=".mainWrapper">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img src="images/logoFinal.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="Interior2toggler navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">ABOUT US</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">SERVICES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#workFlow">WORK FLOW</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">BLOG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="mainWrapper">
+            <!-- Banner Section -->
+            <div class="row aboutBanner">
+                <div class="aboutBannerLeft">
+                    <img data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" src="images/aboutBanner.png"
+                        alt="">
+                    <div class="aboutBannerRight">
+                        <h1 data-aos="fade-left" data-aos-delay="400" data-aos-duration="500"><span>Our</span> Blog
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Section -->
+            <div class="blogMain">
+                <div class="topText">
+                    <h1>News you will like to know</h1>
+                    <h4>Checkout some new and fresh information you will like</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magni provident ex possimus
+                        molestiae aliquid! Dicta fugit, rem accusamus alias tempore debitis veritatis nostrum tenetur
+                        vitae atque ut vero, deleniti adipisci? Reprehenderit nostrum ducimus excepturi nesciunt quidem,
+                        asperiores beatae perferendis!</p>
+                </div>
+                <div class="mainBlogSection">
+                    <div class="mainBlogLeft">
+                        <div class="card">
+                            <div class="card-img-top">
+                                <img src="images/blogMain1.png" alt="">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-top">
+                                    <div class="card-topLeft">
+                                        <h4 class="card-title">
+                                            Name of the topic here
+                                        </h4>
+                                        <h5 class="card-subtitle">
+                                            Category: <h6 class=" cardsub text-muted">Sofa decor</h6>
+                                        </h5>
+                                    </div>
+                                    <div class="card-topRight .cardCalendar">
+                                        <h1>19</h1>
+                                        <h3>Jan</h3>
+                                    </div>
+                                    
+
+                                </div>
+                                
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, magnam consequatur?
+                                    Voluptatem dolores omnis </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quaerat sit
+                                    assumenda officia vero nisi expedita quasi alias itaque ratione nulla labore id non.
+                                    Vero accusantium laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainBlogRight">
+                        <div class="newsHeader">ALL NEWS</div>
+                        <div class="newsBox">
+                            <div class="card newsItem">
+                                <div class="card-img-left">
+                                    <img src="images/newsItem1.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                <h4 class="card-title">
+                                    Name of the topic here
+                                </h4>
+                                <h5 class="card-subtitle">
+                                    Category: <span class="text-muted">Sofa decor</span>
+                                </h5>
+                                <p class="date">19th January</p>
+                                </div>
+                                
+
+                            </div>
+                            <div class="card newsItem">
+                                <div class="card-img-left">
+                                    <img src="images/newsItem2.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="card-title">
+                                        Name of the Topic here
+                                    </h4>
+                                    <h5 class="card-subtitle">
+                                        Category: <span class="text-muted">Sofa decor</span>
+                                    </h5>
+                                    <p class="date">19th January</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="card newsItem">
+                                <div class="card-img-left">
+                                    <img src="images/newsItem3.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="card-title">
+                                        Name of the topic here
+                                    </h4>
+                                    <h5 class="card-subtitle">
+                                        Category: <span class="text-muted">Wooden Floor</span>
+                                    </h5>
+                                    <p class="date">19th January</p>
+                                </div>
+                                
+                            </div>
+                            <div class="card newsItem">
+                                <div class="card-img-left">
+                                    <img src="images/newsItem4.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h4 class="card-title">
+                                        Name of the topic here
+                                    </h4>
+                                    <h5 class="card-subtitle">
+                                        Category: <span class="text-muted">Minimalist design</span>
+                                    </h5>
+                                    <p class="date">19th January</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div id="contact" class="footer2-box row">
+                <div class="footer-even-col-left | col-lg-4 col-md-12">
+                    <img class="footer2Logo" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"
+                        data-aos-duration="1000" src="images/logoFinal.png" alt="">
+                    <h1 data-aos="zoom-in-right" data-aos-delay="1150" data-aos-duration="1200">We make your <span>Dream </span>
+                        home
+                    </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                </div>
+                <div class="footer2-eColR footer-even-col-right | col-lg-4 col-md-12">
+                    <div class="footer2Links links">
+                        <h4>QUICK LINKS</h4>
+                        <ul>
+                            <li><a href="index.html">Home</li></a>
+                            <li><a href="about.html">About Us</li></a>
+                            <li><a href="services.html">Services</li></a>
+                            <li><a href="projects.html">Projects</li></a>
+                            <li><a href="workflow.html">Work Flow</li></a>
+                            <li><a href="testimonials.html">Tetstimonials</li></a>
+                            <li><a href="blogs.html">Blogs</li></a>
+                            <li style="padding-bottom:0 ;"><a href="contactUs.html">Contact</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer2last col-lg-4 col-md-12" id="footerLast">
+                    <h4>CONTACT US</h4>
+                    <div class="address">
+                        1/2 Lorem Ipsum Address <br>
+                        AK Complex <br>
+                        Near RK Hospital <br>
+                        Pin: 123456
+                    </div>
+                    <div class="footer2-contac contac">
+                        <ul>
+                            <li><i id="phone" class="fa-solid fa-phone-volume" data-aos="fade-left" data-aos-delay="500"></i>
+                                <p>234 5678 /9012 3456</p>
+                            </li>
+                            <li><i class="fa-solid fa-globe" data-aos="fade-left" data-aos-delay="600"></i>
+                                <p>www.bestinterior.com</p>
+                            </li>
+                            <li><i class="fa-solid fa-envelope" data-aos="fade-left" data-aos-delay="700"></i>
+                                <p>bestinterior.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer2copyright copyright | w-full">
+                <div>
+                    © 2023 The Insignia. All Rights Reserved.
+                </div>
+                <div>
+                    Powered by Four Source Technologies
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e3a7f177f0.js" crossorigin="anonymous"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
