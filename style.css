@@ -389,7 +389,6 @@ body{
         .header {
             height: inherit;
             justify-content: space-between;
-            align-items: center;
             grid-column-end: 4;
         }
 
@@ -411,6 +410,7 @@ body{
 
         .headerBottom .navbar {
             margin-left: auto;
+            text-align: right;
         }
 
         .navbar-toggler-icon {
@@ -2190,7 +2190,7 @@ body{
 
     .form-control {
         border-radius: 0;
-        border-color: #ffca49;
+        border-color: #aa2d2f;
     }
 
     .contactBody .form-floating>label {
@@ -2235,8 +2235,8 @@ body{
     }
 
     .form-control:focus {
-        border-color: #f4931e;
-        box-shadow: 0 0 3.5px 0.01rem #f8aa1a;
+        border-color: #ef373b;
+        box-shadow: 0 0 3.5px 0.01rem #813234;
     }
 
     .careerBody .goalRightBottom {
@@ -2252,7 +2252,7 @@ body{
     }
 
     .btn3 {
-        background-color: #f4931e;
+        background-color: #9e3335;
         border: none;
         color: white;
         padding: 0.65rem 4.5rem;
@@ -2261,7 +2261,7 @@ body{
 
     .btn3:hover {
         background-color: white;
-        color: #f4931e;
+        color: #aa2d2f;
     }
 
     .goalRightBottom .rightCol {
@@ -2437,3 +2437,415 @@ body{
         font-size: 1.5rem;
     }
 /* Pricing Page */
+
+/* Login page */
+.loginWrapper {
+    column-gap: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginLeft {
+    flex: 1 2 60%;
+    padding: 5% 5% 0;
+    background-image: url(images/loginPageBG.png);
+    background-size: cover;
+    background-position-x: 25rem;
+}
+.loginLeft img{
+    max-width: 100%;
+}
+
+.loginForm {
+    flex: 1 0 40%;
+    text-align: center;
+    padding: 5% 2.5%;
+    box-shadow: -1px 20px 14px -3px rgb(0 0 0 / 50%)
+}
+
+.loginForm form {
+    padding: 2rem 0;
+}
+
+.formWrapper {
+    margin-top: 4rem;
+}
+
+.logoBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 75%;
+}
+
+.loginLeft .bottomImg {
+    margin-top: 2rem;
+}
+
+.inputTab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2.5rem;
+}
+
+.usrIcon {
+    background: linear-gradient(#9e3335, #ef373b);
+    padding: 1rem;
+    border-radius: 50%;
+    position: relative;
+    left: 2.5rem;
+    top: -0.5rem;
+    z-index: 11;
+}
+
+.usrIcon img {
+    width: 20px;
+}
+
+.inputTab .form-control {
+    padding-inline: 3.5rem;
+    height: calc(3rem + 2px);
+    background-color: #e9e8e8;
+    border-radius: 2rem;
+}
+
+.inputTab .form-label {
+    padding-inline-start: 3.25rem;
+    padding-block: 0.85rem;
+    color: #8d8d8d;
+}
+
+.loginOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 0;
+    font-family: 'open sans';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.loginOptions a {
+    color: #0e2549;
+}
+
+.loginOptions div:nth-child(2) a{
+    color: #813234;
+}
+
+form .btn2{
+    border-radius: 25px;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+.createAC{
+    margin-block: 1rem;
+    border-top: 1px solid #bebcbc;
+    width: 50%;
+    margin-inline: auto ;
+}
+
+.createAC a{
+    text-decoration: none;
+    
+}
+
+@media screen and (min-width: 992px) {
+    .loginWrapper {
+        flex-direction: row;
+    }
+}
+
+/* Login Page */
+
+/* DashBoard Page */
+.dash {
+    padding: 1% 4%;
+}
+
+.topNav .navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    row-gap: 0.5rem;
+}
+
+.topNav .navbar>div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.dash h4 {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.dash h4 span {
+    font-family: inherit;
+    font-size: inherit;
+    color: #9e3335;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.srchBtn {
+    display: flex;
+}
+
+.srchBtn p {
+    color: inherit;
+}
+
+.prT {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.prT p {
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.plus {
+    border-radius: 50%;
+    border: 1px dotted grey;
+}
+
+.plus p {
+    margin: 0;
+    padding: 8px 12px
+}
+
+.dashboard {
+    padding-top: 2rem;
+}
+
+.leftNav ul {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding-right: 0.75rem;
+}
+
+.dashboard .card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tab-content .row {
+    --bs-gutter-y: 1rem;
+}
+
+.tab-content {
+    padding-top: 2.5rem;
+    transition: 0.5s ease forward;
+}
+
+.leftNav {
+    grid-template-columns: 2fr 7fr;
+    position: relative;
+}
+
+.leftNav .nav .nav-item {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    align-items: center;
+}
+
+.leftNav .nav .nav-item>button {
+    width: 100%;
+    height: 4rem;
+}
+
+.leftNav .nav .nav-link.active {
+    background-color: #fee7e8;
+    border-right: 4px solid #aa2d2f;
+}
+
+.leftNav .nav-link.active .tabTitle img{
+    filter: grayscale(0);
+}
+
+.tabTitle {
+    display: flex;
+    column-gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.buttonBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileImg {
+    padding: 0.75rem;
+    border-radius: 50%;
+    background-color: #fee7e8;
+}
+
+.leftNav .card {
+    border-radius: 0;
+}
+
+.leftNav .card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #aa2d2f;
+    margin: 0;
+}
+.leftNav .nav-link{
+    color: #495057
+}
+.leftNav .card-footer {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.drMenu {
+    list-style: none;
+    position: absolute !important;
+    left: -8rem !important;
+    top: 3rem !important;
+    padding: 1rem;
+}
+
+.drMenu li {
+    padding-bottom: 0.5rem;
+}
+
+.drMenu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.drMenu li a:hover {
+    color: #3fb850;
+}
+
+.dropdown-toggle::after {
+    content: '+';
+    border: 0.3px solid #fee7e8;
+    padding: 0.5rem;
+}
+
+.leftNav .card-footer h6 {
+    font-size: 0.9rem;
+}
+
+.leftNav .cardBodyLeft {
+    padding: 2rem 0 0;
+}
+.tabTitle img{
+    filter: grayscale(0.9);
+}
+
+.leftNav .nav-item>button:active .tabtitle img{
+    filter: grayscale(0);
+}
+.leftNav .cardBodyLeft p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+.arrowSign{
+    padding: 0 4px;
+    background-color: #eeeeee;
+}
+.leftNav .nav .nav-link.active .arrowSign{
+    background-color: #9e3335;
+    color: white;
+}
+.tabContentImg {
+    height: 4rem;
+}
+
+input.hs-search-field_input {
+    height: 50px;
+    font-size: 14px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+}   
+
+.navbar .form-control {
+    border-radius: 2rem 0 0 2rem;
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    left: 1rem;
+    color: #adadad;
+}
+
+.searchBar .form-control{
+    padding-left: 2.5rem;
+}
+
+.navbar form .btn1 {
+    border-radius: 0 2rem 2rem 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .leftNav {
+        grid-template-columns: 4fr 7fr;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .leftNav {
+        grid-template-columns: 1fr;
+    }
+
+    .leftNav ul {
+        position: absolute;
+        transform: translateX(-110%);
+        transition: 0.5s ease all;
+        z-index: 5;
+    }
+
+    .profileImg {
+        padding: 0.1rem;
+        position: relative;
+        left: 14rem;
+    }
+
+    .tab-content {
+        margin-top: 2rem;
+    }
+
+    .leftNav ul.slideIn {
+        transform: translate(0);
+        position: relative;
+    }
+
+    .navbar .form-control,
+    .navbar button {
+        height: 2.5rem;
+        margin: auto;
+    }
+}
+
+/* dash board */
