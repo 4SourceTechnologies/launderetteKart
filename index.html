@@ -22,10 +22,11 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" class="stylesheet">
 
+    <!-- Data AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-
     <div class="bodyWrapper">
         <div class="TopSection" id="home">
             <div class="bannerWrapper">
@@ -47,15 +48,17 @@
                                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                 </ul>
                             </div>
+                            <div class="headerTRR">
+                                <p>website: <a href="www.laudrettekart.com">www.launderettekart.com</a></p>
+                            </div>
                         </div>
                         <div class="headerBottom">
                             <div class="navbar navbar-expand-lg">
                                 <div class="container-fluid">
                                     <div class="navbar-collapse" role="navigation">
                                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#navbarSupportedContent"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">
+                                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
                                         </button>
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,16 +67,16 @@
                                                     <a href="index.html" class="nav-link active" aria-current="page">Home</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="about.html" class="nav-link">About Us</a>
+                                                    <a href="about.html" class="nav-link avtive">About Us</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="process.html" class="nav-link">Process</a>
+                                                    <a href="index.html/#process" class="nav-link">Process</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
                                                     <a href="services.html" class="nav-link">Services</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
-                                                    <a href="pricing.html" class="nav-link">Pricing</a>
+                                                    <a href="index.html/#pricing" class="nav-link">Pricing</a>
                                                 </li>
                                                 <li class="hoverUnderline nav-item">
                                                     <a href="contact.html" class="nav-link">Contact</a>
@@ -85,58 +88,79 @@
                             </div>
                         </div>
                     </div>
+                
                 </div>
 
                 <div class="heroLeft">
                     <div>
-                        <h2>We are the <span>best laundary</span> Service in Town</h2>
+                        <h2>We are the <span data-aos="fade-up" data-aos-delay="600">best laundary</span> Service in Town</h2>
                         <p>Lorem Ipsum is simply dummy text of the
                             printing and typesetting industry.</p>
                         <button class="btn1">Learn More</button>
                     </div>
-
                     <div class="BannerImg">
-                      <div class="bannerImgWrapper">
-                        <img src="images/bannerPlaceHolderImg.png" alt="">
-                      </div>
-                        
-                        <div class="playBtn">
-                            <img src="images/playButton.png" alt="">
+                        <div class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" data-bs-interval="1000">
+                                <div class="carousel-item active bannerImgWrapper">
+                                    <img src="images/bannerPlaceHolderImg.png" alt="">
+                                    <div class="playBtn">
+                                        <img src="images/playButton.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="carousel-item bannerImgWrapper">
+                                    <img  src="images/bannerSecond.png"  alt="">
+                                    <div class="playBtn">
+                                        <img src="images/playButton.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="heroRight">
                     <img src="images/overlay.png" alt="">
+                </div>
+
+                <div id="background-wrap">
+                    <div class="bubble x1"></div>
+                    <div class="bubble x2"></div>
+                    <div class="bubble x3"></div>
+                    <div class="bubble x4"></div>
+                    <div class="bubble x5"></div>
+                    <div class="bubble x6"></div>
+                    <div class="bubble x7"></div>
+                    <div class="bubble x8"></div>
+                    <div class="bubble x9"></div>
+                    <div class="bubble x10"></div>
                 </div>
             </div>
 
         </div>
 
         <div class="aboutSection" id="about">
-            <div class="aboutLeft">
+            <div data-aos="fade-right" class="aboutLeft">
                 <img src="images/girl.png" alt="">
             </div>
             <div class="aboutRight">
-                <h1>ABOUT US</h1>
-                <div class="horizontalYellowLine underabout"></div>
-                <h3 class="experience">02+ YEARS EXPERIENCE</h3>
-                <h6>Lorem Ipsum is simply dummy text of the printing
+                <h1 data-aos="fade-up">ABOUT US</h1>
+                <div data-aos="fade-up" data-aos-delay="50" class="horizontalYellowLine underabout"></div>
+                <h3 data-aos="fade-up" data-aos-delay="500" class="experience">02+ YEARS EXPERIENCE</h3>
+                <h6 data-aos="fade-up" data-aos-delay="800">Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                <p data-aos="fade-up" data-aos-delay="1000">Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book.</p>
-                <h3 class="benefits">BENEFITS</h3>
+                <h3 class="benefits" data-aos="fade-up" data-aos-delay="1200">BENEFITS</h3>
                 <ul class="benefitsChecklist">
-                    <li>Lorem Ipsum is simply dummy text of the printing industry.</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing industry.</li>
-                    <li>Lorem Ipsum is simply dummy text of the printing industry.</li>
+                    <li data-aos="fade-up" data-aos-delay="1400">Lorem Ipsum is simply dummy text of the printing industry.</li>
+                    <li data-aos="fade-up" data-aos-delay="1600">Lorem Ipsum is simply dummy text of the printing industry.</li>
+                    <li data-aos="fade-up" data-aos-delay="1800">Lorem Ipsum is simply dummy text of the printing industry.</li>
                 </ul>
-                <h3 class="trust">WE ARE TRUSTED BY <span>1234</span></h3>
-                <div class="horizontalYellowLine underspan"></div>
-                <button class="btn2">Learn More</button>
+                <h3 data-aos="fade-up" data-aos-delay="2000" class="trust">WE ARE TRUSTED BY <span>1234</span></h3>
+                <div data-aos="fade-up" data-aos-delay="2100" class="horizontalYellowLine underspan"></div>
+                <button data-aos="fade-up" data-aos-delay="2200" data-aos-offset="50" class="btn2">Learn More</button>
             </div>
             <div class="overlayText aboutOverlay">
                 <img src="images/aboutOverlay.png" alt="">
@@ -144,11 +168,11 @@
         </div>
 
         <div class="processSection">
-            <h1>PROCESS</h1>
+            <h1 data-aos="fade-up" data-aos-delay="200">PROCESS</h1>
             <div class="processContainer container-fluid">
                 <div class="processList row">
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card processCard">
+                        <div class="card processCard" data-aos="flip-right" data-aos-delay="400">
                             <h4 class="card-title">
                                 Book your Service
                             </h4>
@@ -156,19 +180,19 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card processCard">
+                        <div class="card processCard" data-aos="flip-right" data-aos-delay="600">
                             <h4 class="card-title">Order Recieved by Us</h4>
                             <embed class="card-image" src="images/icon2.svg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card processCard">
+                        <div class="card processCard" data-aos="flip-right" data-aos-delay="800">
                             <h4 class="card-title">Clean your products</h4>
                             <embed class="card-image" src="images/icon3.svg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="card processCard">
+                        <div class="card processCard" data-aos="flip-right" data-aos-delay="1000">
                             <h4 class="card-title">Deliver to you</h4>
                             <embed class="card-image" src="images/icon4.svg" alt="">
                         </div>
@@ -181,14 +205,14 @@
         </div>
 
         <div class="serviceSection" id="services"> 
-            <h1>SERVICES</h1>
-            <div class="horizontalYellowLine underService"></div>
+            <h1 data-aos="fade-up">SERVICES</h1>
+            <div data-aos="fade-up" class="horizontalYellowLine underService"></div>
             <div id="serviceCarousels" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row serviceRow">
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div data-aos="flip-left" data-aos-delay="400" data-aos-duration="500" class="card">
                                     <div class="card-img-top">
                                         <img src="images/carpetCleaning.png" alt="" class="card-image">
                                         <div class="serviceCardSide">
@@ -213,7 +237,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card" data-aos="flip-left" data-aos-delay="600" data-aos-duration="500" >
                                     <div class="card-img-top">
                                         <img src="images/dryCleaning.png" class="card-image" alt="">
                                         <div class="serviceCardSide">
@@ -239,7 +263,7 @@
                             
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card" data-aos="flip-left" data-aos-delay="800" data-aos-duration="500" >
                                     <div class="card-img-top">
                                         <img src="images/shoeCleaning.png" class="card-image" alt="">
                                         <div class="serviceCardSide">
@@ -272,7 +296,7 @@
                     <div class="carousel-item">
                         <div class="row serviceRow">
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="500">
                                     <div class="card-img-top">
                                         <img src="images/carpetCleaning.png" alt="" class="card-image">
                                         <div class="serviceCardSide">
@@ -297,7 +321,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card" data-aos="flip-left" data-aos-delay="600" data-aos-duration="500">
                                     <div class="card-img-top">
                                         <img src="images/dryCleaning.png" class="card-image" alt="">
                                         <div class="serviceCardSide">
@@ -323,7 +347,7 @@
                             
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="card">
+                                <div class="card" data-aos="flip-left" data-aos-delay="800" data-aos-duration="500">
                                     <div class="card-img-top">
                                         <img src="images/shoeCleaning.png" class="card-image" alt="">
                                         <div class="serviceCardSide">
@@ -370,11 +394,11 @@
         </div>
 
         <div class="pricingSection" id="pricing">
-            <h1>Pricing</h1>
+            <h1 data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">Pricing</h1>
             <div class="horizontalYellowLine underPrice"></div>
             <div class="pricingRow row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="pricingCard card">
+                    <div class="pricingCard card" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="600">
                         <img src="images/pricing1Img.png" alt="" class="card-img-top">
                         <h4 class="card-title">Standard Package</h4>
                         <h5 class="card-subtitle">50 clothes per month</h5>
@@ -403,7 +427,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="pricingCard card">
+                    <div class="pricingCard card" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="600">
                         <img src="images/pricing2inmg.png" alt="" class="card-img-top enterpriseImg">
                         <h4 class="card-title">Enterprise Package</h4>
                         <h5 class="card-subtitle">60 clothes per month</h5>
@@ -432,7 +456,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="pricingCard card">
+                    <div class="pricingCard card" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="600">
                         <img src="images/pricing3Img.png" alt="" class="card-img-top premiumImg">
                         <h4 class="card-title">Premium Package</h4>
                         <h5 class="card-subtitle">70 clothes per month</h5>
@@ -499,7 +523,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <div class="Testimonialslide">
                             <div class="testiOne">
                                 <div class="testiUp">
@@ -530,7 +554,7 @@
                                     Velit, harum sequi!</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev testi customCarouselControl-prev" type="button" data-bs-target="#testimonialCarousels"
                     data-bs-slide="prev">
@@ -555,7 +579,7 @@
         <div class="footerSection">
             <div class="footerColWrapper">
                 <div class="footerIntro">
-                    <img src="images/logo.png" alt="" class="footerLogo">
+                    <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="images/logo.png" alt="" class="footerLogo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, inventore qui libero enim minima assumenda.</p>
                 </div>
                 <div class="quickLinks">
@@ -564,9 +588,9 @@
                     <ul class="quickLinkList">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
                 <div class="address">
@@ -601,17 +625,15 @@
         </div> 
     </div>
 
-
-
-
-
-
-
-
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
